@@ -1,3 +1,4 @@
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@/lib/analytics";
@@ -24,6 +25,13 @@ export const metadata: Metadata = {
   },
 };
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap", // SEO + performance
+  variable: "--font-code", // optional but recommended
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -31,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
+      <body className={jetbrainsMono.className}>
         {children}
         <Analytics />
       </body>
