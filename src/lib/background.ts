@@ -10,8 +10,18 @@ export const backgrounds = [
     value: "linear-gradient(135deg,#2563eb,#06b6d4)",
   },
   {
-    id: "Dark",
-    label: "#020617",
-    value: "#020617",
-  },
+        id: "pure-dark",
+        label: "Pure Dark",
+        value: "#020617",
+      },
+      {
+        id: "soft-gray",
+        label: "Soft Gray",
+        value: "#f8fafc",
+      },
+      {
+        id: "sunset",
+        label: "Sunset",
+        value: "linear-gradient(135deg,#fb7185,#fbbf24)",
+      },
 ];

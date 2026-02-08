@@ -9,13 +9,14 @@ import { backgrounds } from "./../../lib/background";
 export default function CodeImageApp() {
   const exportRef = useRef<HTMLDivElement>(null);
 
-  const [code, setCode] = useState(`import SwiftUI
-
-struct CircleImage: View {
-  var body: some View {
-    Image("turtlerock")
-      .clipShape(Circle())
-  }
+  const [code, setCode] = useState(`body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 }`);
   const [dark, setDark] = useState(true);
   const [padding, setPadding] = useState(32);

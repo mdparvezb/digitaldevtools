@@ -1,6 +1,5 @@
 import { Moon, Sun, Download } from "lucide-react";
 import { toPng } from "html-to-image";
-import { backgrounds } from "./../../lib/background";
 import BackgroundDropdown from "./BackgroundDropDown";
 
 export default function ControlDock({
@@ -29,7 +28,7 @@ export default function ControlDock({
   };
 
   return (
-    <div className="w-full max-w-150 fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#111] text-white rounded-xl px-4 py-3 flex flex-wrap items-center gap-4 shadow-xl">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/90 text-white rounded-xl px-4 py-3 flex flex-wrap min-w-80 justify-center items-center gap-4 shadow-xl">
       {/* Backgrounds */}
       <BackgroundDropdown value={background} onChange={setBackground} />
       {/* <select
@@ -49,8 +48,8 @@ export default function ControlDock({
         ))}
       </select> */}
       {/* Theme */}
-      <button onClick={() => setDark(!dark)}>
-        {dark ? <Sun size={16} /> : <Moon size={16} />}
+      <button onClick={() => setDark(!dark)} className="text-purple-600">
+        {dark ? <Sun size={18} /> : <Moon size={18} />}
       </button>
 
       {/* Padding */}
@@ -59,7 +58,7 @@ export default function ControlDock({
           key={p}
           onClick={() => setPadding(p)}
           className={`px-2 py-1 text-xs rounded ${
-            padding === p ? "bg-white text-black" : "bg-[#222]"
+            padding === p ? "bg-blue-700 text-white" : "bg-[#222]"
           }`}
         >
           {p}
@@ -81,7 +80,7 @@ export default function ControlDock({
       {/* Export */}
       <button
         onClick={exportImage}
-        className="flex items-center gap-1 px-3 py-1 bg-indigo-600 rounded text-xs"
+        className="flex items-center gap-1 px-3 py-1 bg-indigo-600 rounded text-xs cursor-pointer"
       >
         <Download size={14} />
         Export

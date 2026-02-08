@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="w-full flex justify-center pt-20 px-2 md:py-20">
+    <main className="w-full h-screen flex justify-center items-start pt-20 px-2 md:py-20 bg-black overflow-y-auto">
       <CodeImageApp />
     </main>
   );

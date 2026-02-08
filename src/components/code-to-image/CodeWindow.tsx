@@ -25,18 +25,16 @@ export default function CodeWindow({ code, setCode, dark, language }: any) {
         <span className="w-3 h-3 rounded-full bg-red-400" />
         <span className="w-3 h-3 rounded-full bg-yellow-400" />
         <span className="w-3 h-3 rounded-full bg-green-400" />
-        <span className="ml-auto uppercase">{language}</span>
       </div>
 
-      {/* ✅ WINDOW BACKGROUND PADDING (CORRECT PLACE) */}
-      <div style={{ padding: "30px" }}>
-        {/* ❌ NO padding here */}
+      {/* ✅ WINDOW BACKGROUND PADDINGs */}
+      <div style={{ padding: "30px 20px" }}>
         <Editor
           value={code}
           onValueChange={setCode}
           highlight={highlight}
           textareaClassName="outline-none"
-          className={`font-mono text-[12px] md:text-[15px] leading-[1.75] font-bold ${
+          className={`font-mono text-[12px] md:text-[16px] leading-[1.75] font-semibold tracking-wide ${
             dark ? "text-slate-100" : "text-slate-900"
           }`}
           style={{

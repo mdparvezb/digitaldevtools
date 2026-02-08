@@ -32,7 +32,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
             Smart Developer Tools
           </span>
-          <br className="hidden md:block" />
+          <br className="md:block" />
           All in One Place
         </motion.h1>
 
