@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="mt-6 max-w-2xl mx-auto text-gray-600 text-base md:text-lg"
         >
-          I build and provide fast, privacy-friendly tools to help developers
+          We build and provide fast, privacy-friendly tools to help developers
           write better code, create content faster, and ship products smarter —
           all directly in the browser.
         </motion.p>

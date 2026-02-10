@@ -16,7 +16,6 @@ export default function CodeImageApp() {
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }
 }`);
   const [dark, setDark] = useState(true);
   const [padding, setPadding] = useState(32);

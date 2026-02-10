@@ -16,14 +16,17 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-gray-200">
-      <nav className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <nav className="w-full mx-auto px-12 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
           href="/"
-          className="flex items-center gap-2 font-semibold text-gray-900"
+          className="h-full flex items-center gap-2 font-semibold text-gray-900"
         >
-          <Code2 className="w-5 h-5 text-gray-700" />
-          <span>SmartDevTool</span>
+          <img
+            src="./branding/logo.png"
+            alt="DigitalDevTools logo"
+            className="w-auto h-[80%]"
+          />
         </a>
 
         {/* Desktop Menu */}
