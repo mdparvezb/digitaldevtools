@@ -2,6 +2,7 @@ import { JetBrains_Mono, Smooch } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@/lib/analytics";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Digital Dev Tools – Free Online Tools for Developers",
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body>
+        <Navbar />
         {children}
         <Analytics />
       </body>

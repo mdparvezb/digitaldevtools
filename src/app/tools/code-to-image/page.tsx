@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "DigitalDevTools",
     images: [
       {
-        url: "https://digitaldevtools.com/og/code-to-image.jpg",
+        url: "og/code-to-image.jpg",
         width: 1200,
         height: 630,
         alt: "Code to Image Tool",

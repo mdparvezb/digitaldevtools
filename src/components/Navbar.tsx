@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Code2 } from "lucide-react";
+import Link from "next/link";
 
 const navLinks = [
   { name: "Tools", href: "#tools" },
@@ -17,16 +18,16 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-gray-200">
       <nav className="w-full mx-auto px-4 md:px-12 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="h-full flex items-center gap-2 font-semibold text-gray-900"
         >
           <img
-            src="./branding/logo.png"
+            src="/branding/logo.png"
             alt="DigitalDevTools logo"
-            className="w-50"
+            className="w-50 h-auto"
           />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
