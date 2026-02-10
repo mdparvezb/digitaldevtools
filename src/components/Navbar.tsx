@@ -7,7 +7,6 @@ import { Menu, X, Code2 } from "lucide-react";
 const navLinks = [
   { name: "Tools", href: "#tools" },
   { name: "Docs", href: "#docs" },
-  { name: "Pricing", href: "#pricing" },
   { name: "Blog", href: "#blog" },
 ];
 
@@ -16,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-gray-200">
-      <nav className="w-full mx-auto px-12 h-16 flex items-center justify-between">
+      <nav className="w-full mx-auto px-4 md:px-12 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
           href="/"
@@ -25,7 +24,7 @@ export default function Navbar() {
           <img
             src="./branding/logo.png"
             alt="DigitalDevTools logo"
-            className="w-auto h-[80%]"
+            className="w-50"
           />
         </a>
 

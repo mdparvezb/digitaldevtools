@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://smartdevtool.com/sitemap.xml",
+    sitemap: "https://www.digitaldevtools.com/sitemap.xml",
   };
 }

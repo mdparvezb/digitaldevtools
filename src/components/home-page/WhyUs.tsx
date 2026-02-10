@@ -75,7 +75,7 @@ export default function WhyUseUs() {
           </h2>
 
           <p className="mt-4 text-gray-600">
-            I focus on building tools that respect your time, privacy, and
+            We focus on building tools that respect your time, privacy, and
             workflow — so you can focus on what really matters.
           </p>
         </motion.div>

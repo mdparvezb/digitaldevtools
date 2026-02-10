@@ -31,22 +31,6 @@ export default function ControlDock({
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/90 text-white rounded-xl px-4 py-3 flex flex-wrap min-w-80 justify-center items-center gap-4 shadow-xl">
       {/* Backgrounds */}
       <BackgroundDropdown value={background} onChange={setBackground} />
-      {/* <select
-        name=""
-        id=""
-        onChange={(e) => setBackground(e.target.value)}
-        className="bg-transparent"
-      >
-        {backgrounds.map((bg) => (
-          <option
-            value={bg.value}
-            key={bg.name}
-            className={`w-6 h-6 rounded-full border border-white/20`}
-          >
-            <div className={`bg-[${bg.value}]`}></div>
-          </option>
-        ))}
-      </select> */}
       {/* Theme */}
       <button onClick={() => setDark(!dark)} className="text-purple-600">
         {dark ? <Sun size={18} /> : <Moon size={18} />}

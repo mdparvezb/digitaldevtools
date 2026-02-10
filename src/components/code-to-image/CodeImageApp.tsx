@@ -19,7 +19,7 @@ export default function CodeImageApp() {
 }`);
   const [dark, setDark] = useState(true);
   const [padding, setPadding] = useState(32);
-  const [language, setLanguage] = useState("swift");
+  const [language, setLanguage] = useState("css");
   const [background, setBackground] = useState(backgrounds[0].value);
 
   return (

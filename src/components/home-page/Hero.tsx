@@ -14,7 +14,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-200 bg-white text-sm text-gray-600"
         >
           <Sparkles className="w-4 h-4 text-indigo-500" />
@@ -25,7 +25,7 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.6 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
           className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-gray-900"
         >
           Powerful{" "}
@@ -40,7 +40,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
           className="mt-6 max-w-2xl mx-auto text-gray-600 text-base md:text-lg"
         >
           We build and provide fast, privacy-friendly tools to help developers
@@ -52,7 +52,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
