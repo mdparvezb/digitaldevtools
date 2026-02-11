@@ -1,6 +1,7 @@
 "use client";
 
 import { Github, Twitter, Mail, Code2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,10 +11,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 text-gray-900 font-semibold">
-              <Code2 className="w-5 h-5 text-indigo-600" />
-              SmartDevTool
-            </div>
+            <Link
+              href="/"
+              className="flex items-center gap-2 font-semibold text-gray-900"
+            >
+              <img
+                src="/branding/logo.png"
+                alt="DigitalDevTools logo"
+                className="w-20 md:w-50 h-auto"
+              />
+            </Link>
             <p className="mt-4 text-sm text-gray-600 leading-relaxed">
               We build fast, privacy-friendly developer tools that run entirely
               in your browser. No signups. No tracking. Just productivity.
@@ -52,7 +59,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-900">Resources</h4>
+            <h4 className="text-sm font-semibold text-gray-900">Quick Links</h4>
             <ul className="mt-4 space-y-2 text-sm text-gray-600">
               <li>
                 <a href="/blog" className="hover:text-gray-900">
@@ -60,13 +67,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/docs" className="hover:text-gray-900">
-                  Documentation
+                <a href="/about" className="hover:text-gray-900">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="/roadmap" className="hover:text-gray-900">
-                  Roadmap
+                <a href="/contact" className="hover:text-gray-900">
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -113,10 +120,10 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4 text-xs text-gray-500">
-            <a href="/privacy" className="hover:text-gray-900">
+            <a href="/privacy-policy" className="hover:text-gray-900">
               Privacy Policy
             </a>
-            <a href="/terms" className="hover:text-gray-900">
+            <a href="/terms-of-use" className="hover:text-gray-900">
               Terms of Service
             </a>
           </div>

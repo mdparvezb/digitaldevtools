@@ -1,4 +1,6 @@
 import CodeImageApp from "@/components/code-to-image/CodeImageApp";
+import FAQ from "@/components/code-to-image/FAQ";
+import ToolHero from "@/components/code-to-image/ToolHero";
 
 export const metadata = {
   title: "Code to Image Converter – Create Beautiful Code Screenshots Online",
@@ -27,10 +29,13 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
-      <main className="w-full h-screen flex justify-center items-start pt-20 px-2 md:py-20 bg-black overflow-y-auto">
+    <div className="w-full bg-black flex flex-col items-center">
+      <ToolHero />
+
+      <main className="w-full flex justify-center px-2 md:py-10 ">
         <CodeImageApp />
       </main>
-    </>
+      <FAQ />
+    </div>
   );
 }

@@ -11,7 +11,6 @@ export default function Home() {
         <ToolGrid />
         <WhyUs />
       </main>
-      <Footer />
     </>
   );
 }

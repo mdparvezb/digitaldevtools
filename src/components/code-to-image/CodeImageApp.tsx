@@ -43,6 +43,7 @@ export default function CodeImageApp() {
         setBackground={setBackground}
         background={background}
       />
+      <div></div>
     </>
   );
 }
