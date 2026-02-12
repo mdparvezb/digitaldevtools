@@ -3,32 +3,37 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.digitaldevtools.com",
+      url: "https://digitaldevtools.com",
       lastModified: new Date(),
       priority: 1,
     },
     {
-      url: "https://www.digitaldevtools.com/tools/code-to-image",
+      url: "https://digitaldevtools.com/tools/code-to-image",
       lastModified: new Date(),
       priority: 0.9,
     },
     {
-      url: "https://www.digitaldevtools.com/privacy-policy",
+      url: "https://digitaldevtools.com/tools/image-compressor",
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: "https://www.digitaldevtools.com/terms-of-use",
+      url: "https://digitaldevtools.com/privacy-policy",
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: "https://www.digitaldevtools.com/contact",
+      url: "https://digitaldevtools.com/terms-of-use",
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: "https://www.digitaldevtools.com/about",
+      url: "https://digitaldevtools.com/contact",
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: "https://digitaldevtools.com/about",
       lastModified: new Date(),
       priority: 0.8,
     },

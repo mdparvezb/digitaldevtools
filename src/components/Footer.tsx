@@ -18,7 +18,7 @@ export default function Footer() {
               <img
                 src="/branding/logo.png"
                 alt="DigitalDevTools logo"
-                className="w-20 md:w-50 h-auto"
+                className="w-40 md:w-50 h-full"
               />
             </Link>
             <p className="mt-4 text-sm text-gray-600 leading-relaxed">
@@ -45,12 +45,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/tools/png-to-webp" className="hover:text-gray-900">
+                <a href="#" className="hover:text-gray-900">
                   PNG to WebP
                 </a>
               </li>
               <li>
-                <a href="/tools/code-to-pdf" className="hover:text-gray-900">
+                <a href="#" className="hover:text-gray-900">
                   Code to PDF
                 </a>
               </li>
@@ -103,7 +103,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:support@smartdevtool.com"
+                href="mailto:support@digitaldevtool.com"
                 aria-label="Email"
                 className="text-gray-600 hover:text-gray-900 transition"
               >
@@ -116,7 +116,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-gray-200 pt-6">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} SmartDevTool. All rights reserved.
+            © {new Date().getFullYear()} DigitalDevTool. All rights reserved.
           </p>
 
           <div className="flex gap-4 text-xs text-gray-500">

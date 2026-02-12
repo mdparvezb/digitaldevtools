@@ -29,13 +29,14 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div className="w-full bg-black flex flex-col items-center">
-      <ToolHero />
-
-      <main className="w-full flex justify-center px-2 md:py-10 ">
+    <div className="w-full bg-black flex flex-col items-center px-3">
+      <main className="w-full flex justify-center my-10 md:py-10">
         <CodeImageApp />
       </main>
-      <FAQ />
+      <div className="flex flex-col justify-center items-center bg-gray-900 my-4 py-4 rounded-2xl">
+        <ToolHero />
+        <FAQ />
+      </div>
     </div>
   );
 }

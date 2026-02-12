@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-linear-to-r from-indigo-200/40 via-purple-200/40 to-pink-200/40 blur-3xl rounded-full" />
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-150 h-150 bg-linear-to-r from-indigo-200/40 via-purple-200/40 to-pink-200/40 blur-3xl rounded-full" />
 
       <div className="relative max-w-7xl mx-auto px-4 py-20 text-center">
         {/* Badge */}
@@ -18,7 +18,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-200 bg-white text-sm text-gray-600"
         >
           <Sparkles className="w-4 h-4 text-indigo-500" />
-          Built for Developers & Creators
+          Built for digital Developers & Creators
         </motion.div>
 
         {/* Heading */}
@@ -29,7 +29,7 @@ export default function Hero() {
           className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-gray-900"
         >
           Powerful{" "}
-          <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
             Smart Developer Tools
           </span>
           <br className="md:block" />
@@ -43,9 +43,9 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="mt-6 max-w-2xl mx-auto text-gray-600 text-base md:text-lg"
         >
-          We build and provide fast, privacy-friendly tools to help developers
-          write better code, create content faster, and ship products smarter —
-          all directly in the browser.
+          We build and provide digital fast, privacy-friendly tools to help
+          developers write better code, create content faster, and ship products
+          smarter — all directly in the browser.
         </motion.p>
 
         {/* CTA Buttons */}

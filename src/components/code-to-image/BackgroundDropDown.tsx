@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ChevronUp } from "lucide-react";
-import { backgrounds } from "./../../lib/background";
+import { backgrounds } from "../../app/tools/code-to-image/background";
 
 type Props = {
   value: string;

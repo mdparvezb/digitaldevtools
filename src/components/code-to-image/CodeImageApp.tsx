@@ -4,13 +4,13 @@ import { useRef, useState } from "react";
 import Canvas from "./Canvas";
 import CodeWindow from "./CodeWindow";
 import ControlDock from "./ControlDock";
-import { backgrounds } from "./../../lib/background";
+import { backgrounds } from "../../app/tools/code-to-image/background";
 
 export default function CodeImageApp() {
   const exportRef = useRef<HTMLDivElement>(null);
 
   const [code, setCode] = useState(`body {
-      font-family: Arial, sans-serif;
+      font-family: Arial;
       background: #f4f4f4;
       display: flex;
       justify-content: center;
@@ -43,7 +43,6 @@ export default function CodeImageApp() {
         setBackground={setBackground}
         background={background}
       />
-      <div></div>
     </>
   );
 }

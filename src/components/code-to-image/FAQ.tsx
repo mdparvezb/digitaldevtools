@@ -1,14 +1,11 @@
 export default function FAQ() {
   return (
-    <section className="mb-20">
-      <h2 className="text-2xl text-white text-center font-semibold">FAQ</h2>
-
-      <details className="mt-4 text-white text-lg">
-        <summary>Is this tool free?</summary>
-        <p className="mt-2">
-          Yes, as of now it's Completely free and browser-based.
-        </p>
-      </details>
+    <section className="w-full my-10 px-4 md:px-10 text-white md:max-w-150">
+      <h2 className="mb-4 text-2xl text-white font-semibold">FAQ</h2>
+      <h3 className="text-xl text-white font-medium">Is this tool free?</h3>
+      <p className="mt-2 text-white/80">
+        Yes, as of now it's Completely free and browser-based.
+      </p>
     </section>
   );
 }

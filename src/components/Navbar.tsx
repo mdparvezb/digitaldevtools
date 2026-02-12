@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Tools", href: "/tools" },
   { name: "About", href: "/about" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Blog", href: "#blog" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur bg-white/95 border-b border-gray-300">
-      <nav className="w-full mx-auto px-4 md:px-20 h-16 flex items-center justify-between">
+      <nav className="w-full mx-auto px-4 md:px-20 h-14 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
@@ -26,7 +26,7 @@ export default function Navbar() {
           <img
             src="/branding/logo.png"
             alt="DigitalDevTools logo"
-            className="w-20 md:w-50 h-auto"
+            className="w-40 md:w-50 h-full"
           />
         </Link>
 

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     title: "Privacy Policy | DigitalDevTools",
     description:
       "Official Privacy Policy of DigitalDevTools explaining data usage, cookies, and Google AdSense compliance.",
-    url: "https://www.digitaldevtools.com/privacy-policy",
+    url: "https://digitaldevtools.com/privacy-policy",
     siteName: "DigitalDevTools",
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.digitaldevtools.com/privacy-policy",
+    canonical: "https://digitaldevtools.com/privacy-policy",
   },
 };
 
@@ -42,7 +42,7 @@ export default function PrivacyPolicyPage() {
           Your privacy is important to us. This Privacy Policy explains how we
           collect, use, and safeguard your information when you visit :{" "}
           <a
-            href="https://www.digitaldevtools.com/privacy-policy"
+            href="https://www.digitaldevtools.com"
             className="text-blue-600 hover:underline"
           >
             www.digitaldevtools.com
